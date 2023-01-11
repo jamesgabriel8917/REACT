@@ -10,7 +10,6 @@ import { useState, useEffect } from 'react';
 
 //pages
 import Home from './pages/Home/Home';
-import About from './pages/About/About';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Login from './pages/Login/Login';
@@ -27,7 +26,6 @@ function App() {
   {/*
   useEffect(() => {
 
-    
     onAuthStateChanged(auth, (user) => {
       setUser(user)
     })
@@ -48,7 +46,6 @@ function App() {
         <div className='container'>
           <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/about' element={<About />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/register' element={<Register />}></Route>
           </Routes>
